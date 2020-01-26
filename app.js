@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));    // to declare to exp
 app.use('/css', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css')));  // to give express an alternative location for any resource with relative path starting with '/css'
 app.use('/js', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/js')));    // to give express an alternative location for any resource with relative path starting with '/js'
 app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
-app.use('/js', express.static(path.join(__dirname, '/node_modules/popper.js/dist')));
+app.use('/js', express.static(path.join(__dirname, '/node_modules/@popperjs/core/dist/cjs')));
 
 app.get('/', function (req, res) {
     debug(`Hello from my ${chalk.green('library app')}`);
